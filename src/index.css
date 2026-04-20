@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+
+body {
+  background-color: #ffffff; 
+  color: #1d1d1f;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Глобальний стиль для фото у галереї */
+.feature-card img {
+  transform: translateZ(0); /* Вмикаємо GPU */
+  transition: all 0.5s ease-out; /* Плавний перехід */
+}
+
+/* Індивідуальні CSS-класи для fine-tune кожного типу фото */
+
+/* Картки 1, 3: "One-tap setup", "Музика без кордонів" (телефони) */
+.img-iphone {
+  /* Ми масштабуємо телефон так, щоб ключовий UI був у центрі */
+  transform: scale(0.9) translateY(5%);
+  object-fit: contain; /* Не обрізаємо, а вписуємо */
+  object-position: center !important;
+}
+
+/* Картка 2: "Персоналізований просторовий звук" (watch face) */
+.img-watch {
+  /* Годинник має бути меншим, як окремий об'єкт */
+  transform: scale(0.6);
+  object-fit: contain;
+  object-position: center !important;
+}
+
+/* Картки 4, 6: "Контроль одним дотиком", "Адаптивний еквалайзер" (UI) */
+.img-ui {
+  /* Також вписуємо та центруємо інтерфейс */
+  transform: scale(0.45);
+  object-fit: contain;
+  object-position: center !important;
+}
+
+/* Картка 5: "Привіт, Siri" (іконка) */
+.img-siri {
+  /* Siri занадто велика, суттєво зменшуємо її */
+  transform: scale(0.45);
+  object-fit: contain;
+  object-position: center !important;
+}

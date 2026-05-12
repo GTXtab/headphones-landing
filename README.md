@@ -1,18 +1,18 @@
 # 🎧 AirPods Landing Page — Apple Aesthetic
 
-Сучасний, високопродуктивний лендінг для продажу AirPods, розроблений з акцентом на бездоганний UI/UX та технічну довершеність. Проєкт демонструє підхід **Performance-First**, забезпечуючи 60 FPS навіть під час складних анімацій на мобільних пристроях.
+A modern, high-performance landing page for selling AirPods, developed with a focus on flawless UI/UX and technical excellence. The project demonstrates a **Performance-First** approach, ensuring 60 FPS even during complex animations on mobile devices.
 
-Розробник проєкту — Назар, студент 2-го курсу університету, що спеціалізується на Full-stack розробці.
+Developed by Nazar, a 2nd-year university student specializing in Full-stack development.
 
-## 💎 Ключові фішки
+## 💎 Key Features
 
-* **Apple-Style Typography & Layout:** Мінімалістичний дизайн з акцентом на контент.
-* **Interactive Header Slider:** Динамічна зміна моделей з унікальними траєкторіями анімації для кожного пристрою.
-* **Advanced Comparison Table:** Адаптивна таблиця порівняння з використанням CSS Grid анімацій для максимальної плавності.
-* **Mobile-First Experience:** Реалізація нативного **Snap-Scrolling** (магнітного скролу) та оптимізованих тач-зон.
-* **Quick Order Form:** Лаконічна форма замовлення з вбудованою валідацією.
+* **Apple-Style Typography & Layout:** Minimalistic design with a strong focus on content.
+* **Interactive Header Slider:** Dynamic model switching with unique animation trajectories for each device.
+* **Advanced Comparison Table:** Responsive comparison table using CSS Grid animations for maximum smoothness.
+* **Mobile-First Experience:** Native **Snap-Scrolling** implementation and optimized touch zones.
+* **Quick Order Form:** A concise and sleek order form with built-in validation.
 
-## 🚀 Технологічний стек
+## 🚀 Tech Stack
 
 * **Framework:** React (Vite)
 * **Styling:** Tailwind CSS
@@ -20,42 +20,40 @@
 * **Icons:** Lucide React
 * **Deployment:** GitHub Pages
 
-## ⚡ Оптимізація та продуктивність
+## ⚡ Optimization & Performance
 
-У проєкті реалізовано ряд рішень для досягнення високих балів у Lighthouse:
+The project implements several solutions to achieve high Lighthouse scores:
 
-* **Image Optimization:** Перехід на формат **WebP** та використання `fetchpriority="high"` для LCP-зображень.
-* **Main Thread Efficiency:** Важкі JS-анімації замінено на **GPU-accelerated CSS transitions** (grid-template-rows).
-* **Rendering Logic:** Використання `React.memo` та `useCallback` для ізоляції рендеру та запобігання зайвим обчисленням.
-* **Zero Forced Reflows:** Анімації побудовані виключно на властивостях `transform` та `opacity`.
+* **Image Optimization:** Transitioned to **WebP** format and utilized `fetchpriority="high"` for LCP images.
+* **Main Thread Efficiency:** Heavy JS animations replaced with **GPU-accelerated CSS transitions** (grid-template-rows).
+* **Rendering Logic:** Utilized `React.memo` and `useCallback` to isolate rendering and prevent unnecessary re-renders.
+* **Zero Forced Reflows:** Animations are built exclusively using `transform` and `opacity` properties.
 
-## 🛠 Інсталяція
+## 🛠 Installation
 
-1. Клонуйте репозиторій:
+1. Clone the repository:
 ```bash
-git clone https://github.com/твій-юзернейм/headphones-landing.git
+git clone [https://github.com/your-username/headphones-landing.git](https://github.com/your-username/headphones-landing.git)
 
 ```
 
+2. Install dependencies:
 
-2. Встановіть залежності:
 ```bash
 npm install
 
 ```
 
+3. Run the local server:
 
-3. Запустіть локальний сервер:
 ```bash
 npm run dev
 
 ```
 
+## 📦 Deployment
 
-
-## 📦 Деплой
-
-Проєкт автоматично збирається та деплоїться на GitHub Pages за допомогою скрипта:
+The project is automatically built and deployed to GitHub Pages using the script:
 
 ```bash
 npm run deploy
@@ -64,8 +62,10 @@ npm run deploy
 
 ---
 
-© 2026 Island_with_apple. Всі права захищені.
+© 2026 Island_with_apple. All rights reserved.
 
 ```
+
+*(Не забудь замінити `your-username` у посиланні для клонування на свій реальний нікнейм у GitHub!)*
 
 ```

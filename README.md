@@ -2,8 +2,6 @@
 
 A modern, high-performance landing page for selling AirPods, developed with a focus on flawless UI/UX and technical excellence. The project demonstrates a **Performance-First** approach, ensuring 60 FPS even during complex animations on mobile devices.
 
-Developed by Nazar, a 2nd-year university student specializing in Full-stack development.
-
 ## 💎 Key Features
 
 * **Apple-Style Typography & Layout:** Minimalistic design with a strong focus on content.
@@ -33,7 +31,7 @@ The project implements several solutions to achieve high Lighthouse scores:
 
 1. Clone the repository:
 ```bash
-git clone [https://github.com/your-username/headphones-landing.git](https://github.com/your-username/headphones-landing.git)
+git clone https://github.com/your-username/headphones-landing.git
 
 ```
 

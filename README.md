@@ -1,73 +1,71 @@
-# React + TypeScript + Vite
+# 🎧 AirPods Landing Page — Apple Aesthetic
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Сучасний, високопродуктивний лендінг для продажу AirPods, розроблений з акцентом на бездоганний UI/UX та технічну довершеність. Проєкт демонструє підхід **Performance-First**, забезпечуючи 60 FPS навіть під час складних анімацій на мобільних пристроях.
 
-Currently, two official plugins are available:
+Розробник проєкту — Назар, студент 2-го курсу університету, що спеціалізується на Full-stack розробці.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 💎 Ключові фішки
 
-## React Compiler
+* **Apple-Style Typography & Layout:** Мінімалістичний дизайн з акцентом на контент.
+* **Interactive Header Slider:** Динамічна зміна моделей з унікальними траєкторіями анімації для кожного пристрою.
+* **Advanced Comparison Table:** Адаптивна таблиця порівняння з використанням CSS Grid анімацій для максимальної плавності.
+* **Mobile-First Experience:** Реалізація нативного **Snap-Scrolling** (магнітного скролу) та оптимізованих тач-зон.
+* **Quick Order Form:** Лаконічна форма замовлення з вбудованою валідацією.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Технологічний стек
 
-## Expanding the ESLint configuration
+* **Framework:** React (Vite)
+* **Styling:** Tailwind CSS
+* **Animations:** Framer Motion
+* **Icons:** Lucide React
+* **Deployment:** GitHub Pages
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚡ Оптимізація та продуктивність
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+У проєкті реалізовано ряд рішень для досягнення високих балів у Lighthouse:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* **Image Optimization:** Перехід на формат **WebP** та використання `fetchpriority="high"` для LCP-зображень.
+* **Main Thread Efficiency:** Важкі JS-анімації замінено на **GPU-accelerated CSS transitions** (grid-template-rows).
+* **Rendering Logic:** Використання `React.memo` та `useCallback` для ізоляції рендеру та запобігання зайвим обчисленням.
+* **Zero Forced Reflows:** Анімації побудовані виключно на властивостях `transform` та `opacity`.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠 Інсталяція
+
+1. Клонуйте репозиторій:
+```bash
+git clone https://github.com/твій-юзернейм/headphones-landing.git
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. Встановіть залежності:
+```bash
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+
+
+3. Запустіть локальний сервер:
+```bash
+npm run dev
+
+```
+
+
+
+## 📦 Деплой
+
+Проєкт автоматично збирається та деплоїться на GitHub Pages за допомогою скрипта:
+
+```bash
+npm run deploy
+
+```
+
+---
+
+© 2026 Island_with_apple. Всі права захищені.
+
+```
+
 ```

@@ -4,7 +4,7 @@ import { Star } from 'lucide-react';
 
 export default function TrustBlock() {
   return (
-    <section className="py-20 md:py-32 bg-white">
+    <section className="py-20 md:py-32 bg-white" id="why-us">
       <div className="max-w-7xl mx-auto px-6">
         
         <h2 className="text-3xl md:text-6xl font-bold tracking-tight mb-12 md:inter-tight text-black">
